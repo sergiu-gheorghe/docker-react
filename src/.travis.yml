@@ -4,7 +4,7 @@ services:
 
 
 before_install:
-    - docker build -t sergiugheorghe/docker-react -f DockerFile.dev .
+    - docker build -t sergiugheorghe/docker-react -f Dockerfile.dev .
 
 script:
     - docker run sergiugheorghe/docker-react npm run test -- --coverage 
